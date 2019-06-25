@@ -26,114 +26,125 @@
             <!-- Sidebar -->
             <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-              <!-- Sidebar - Brand -->
-              <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.jsp">
-                <div class="sidebar-brand-icon rotate-n-15">
-                  <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">Cregescon <sup>2</sup></div>
-              </a>
-
-              <!-- Divider -->
-              <hr class="sidebar-divider my-0">
-
-              <!-- Nav Item - Dashboard -->
-              <li class="nav-item active">
-                <a class="nav-link" href="index.jsp">
-                  <i class="fas fa-fw fa-tachometer-alt"></i>
-                  <span>Cregescon</span></a>
-              </li>
-
-              <!-- Divider -->
-              <hr class="sidebar-divider">
-              <!-- Inicio creacion de item en sidebar: DEFINICIÓN DE CAMPAÑA -->
-              <!-- Inicio encabezado de item  -->
-              <div class="sidebar-heading">
-                Definición de Campañas
-              </div> 
-              <!-- Fin encabezado de item  -->
-              <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                  <i class="fas fa-fw fa-table"></i>
-                  <span>Definir Campaña</span></a>
-              </li>
-              <!-- Fin creacion de item en sidebar -->
-              <!-- Divider -->
-              <hr class="sidebar-divider">
-              <!-- Inicio creacion de item en sidebar: GESTION DE CAMPAÑA -->
-              <!-- Inicio encabezado de item  -->
-              <div class="sidebar-heading">
-                Gestión de campaña
-              </div> 
-              <!-- Fin encabezado de item  -->
-              <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                  <i class="fas fa-fw fa-table"></i>
-                  <span>Gestionar Campaña</span></a>
-              </li>
-              <!-- Fin creacion de item en sidebar -->
-              
-              <!-- Divider -->
-              <hr class="sidebar-divider d-none d-md-block">
-              
-              <!-- Inicio creacion de item en sidebar: REPOSITORIO DE CAMPAÑA -->
-              <!-- Inicio encabezado de item  -->
-              <div class="sidebar-heading">
-                Repositorio de campañas
-              </div> 
-              <!-- Fin encabezado de item  -->
-              <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                  <i class="fas fa-fw fa-table"></i>
-                  <span>Ver repositorio</span></a>
-              </li>
-              <!-- Fin creacion de item en sidebar -->
-              
-              <!-- Divider -->
-              <hr class="sidebar-divider d-none d-md-block">
-
-              <!-- Inicio creacion de item en sidebar: SEGURIDAD -->
-              <!-- Inicio encabezado de item  -->
-              <div class="sidebar-heading">
-                Seguridad
-              </div>
-              <!-- Fin encabezado de item  -->
-              <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                  <i class="fas fa-fw fa-chart-area"></i>
-                  <span>Usuarios</span></a>
-              </li>
-              <!-- Inicio de opcion de menú colapasdo en item  -->
-              <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                  <i class="fas fa-fw fa-wrench"></i>
-                  <span>Perfiles</span>
+                <!-- Sidebar - Brand -->
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.jsp">
+                    <div class="sidebar-brand-icon rotate-n-15">
+                        <i class="fas fa-laugh-wink"></i>
+                    </div>
+                    <div class="sidebar-brand-text mx-3">Cregescon <sup>2</sup></div>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                  <div class="bg-white py-2 collapse-inner rounded">
-                    <!--<h6 class="collapse-header">Módulos de seguridad:</h6>-->
-                    <a class="collapse-item" href="utilities-color.html">Mis perfiles</a>
-                    <a class="collapse-item" href="utilities-border.html">Asignar permisos</a>
-                    <a class="collapse-item" href="utilities-border.html">Asignar permisos</a>
-                  </div>
+
+                <!-- Divider -->
+                <hr class="sidebar-divider my-0">
+
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.jsp">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Cregescon</span></a>
+                </li>
+
+                <!-- Divider -->
+                <hr class="sidebar-divider">
+                <!-- Inicio creacion de item en sidebar: DEFINICIÓN DE CAMPAÑA -->
+                <!-- Inicio encabezado de item  -->
+                <div class="sidebar-heading">
+                    Definición de Campañas
+                </div> 
+                <!-- Fin encabezado de item  -->
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Definir Campaña</span></a>
+                </li>
+                <!-- Fin creacion de item en sidebar -->
+                <!-- Divider -->
+                <hr class="sidebar-divider">
+                <!-- Inicio creacion de item en sidebar: GESTION DE CAMPAÑA -->
+                <!-- Inicio encabezado de item  -->
+                <div class="sidebar-heading">
+                    Gestión de campaña
+                </div> 
+                <!-- Fin encabezado de item  -->
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Gestionar Campaña</span></a>
+                </li>
+                <!-- Fin creacion de item en sidebar -->
+
+                <!-- Divider -->
+                <hr class="sidebar-divider d-none d-md-block">
+
+                <!-- Inicio creacion de item en sidebar: REPOSITORIO DE CAMPAÑA -->
+                <!-- Inicio encabezado de item  -->
+                <div class="sidebar-heading">
+                    Repositorio de campañas
+                </div> 
+                <!-- Fin encabezado de item  -->
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Ver repositorio</span></a>
+                </li>
+                <!-- Fin creacion de item en sidebar -->
+
+                <!-- Divider -->
+                <hr class="sidebar-divider d-none d-md-block">
+
+                <!-- Inicio creacion de item en sidebar: SEGURIDAD -->
+                <!-- Inicio encabezado de item  -->
+                <div class="sidebar-heading">
+                    Seguridad
                 </div>
-              </li>
-              <!-- Fin de opcion de menú colapasdo en item  -->
+                <!-- Fin encabezado de item  -->
+                
+                <li class="nav-item">
+                    <%String id="parametros";%>
+                    <a class="nav-link" href="/cregescon/sidebar.do?string=<%=id%>">
+                        <i class="fas fa-fw fa-chart-area"></i>
+                        <span>Usuarios</span></a>
+                </li>
+                <!-- Inicio de opcion de menú colapasdo en item  -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+                        <i class="fas fa-fw fa-wrench"></i>
+                        <span>Perfiles</span>
+                    </a>
+                    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <!--<h6 class="collapse-header">Módulos de seguridad:</h6>-->
+                            <a class="collapse-item" href="utilities-color.html">Mis perfiles</a>
+                            <a class="collapse-item" href="utilities-border.html">Asignar permisos</a>
+                            <a class="collapse-item" href="utilities-border.html">Asignar permisos</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- Fin de opcion de menú colapasdo en item  -->
+                
+                <!-- Separador -->
+                <hr class="sidebar-divider d-none d-md-block">
+                <!-- Fin creacion de item en sidebar -->
 
-              <!-- Separador -->
-              <hr class="sidebar-divider d-none d-md-block">
-              <!-- Fin creacion de item en sidebar -->
-
-              <!-- Boton para esconder sidebar -->
-              <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-              </div>
-
+                <!-- Boton para esconder sidebar -->
+                <div class="text-center d-none d-md-inline">
+                    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                </div>
             </ul>
             <!-- End of Sidebar -->
+            <div class="col-xl-10 col-lg-12 col-md-9">
+            <%
+                String strMenu = (String) request.getAttribute("sidebarOption");
+                if (strMenu == null || strMenu.equalsIgnoreCase("")) {
+            %><%@include file ="parametros.jsp"%><%
+            } else if (strMenu.equals("parametros")) {
+            %><%@include file="login.jsp"%><%
+                }
+            %>
+            </div>
         </div>
-       
-         <!-- Bootstrap core JavaScript-->
+
+        <!-- Bootstrap core JavaScript-->
         <script src="resources/vendor/jquery/jquery.min.js"></script>
         <script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 

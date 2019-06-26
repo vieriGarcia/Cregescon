@@ -7,6 +7,7 @@ package pe.edu.unmsm.sistemas.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -63,4 +64,9 @@ public class Conexion {
         }
         return null;
     }
+    
+    public PreparedStatement getPreparedStatement(String sql) throws SQLException{
+        return con.prepareStatement(sql);
+    }
+
 }

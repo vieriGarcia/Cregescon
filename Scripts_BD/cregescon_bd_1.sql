@@ -32,7 +32,7 @@ create table seg_perfil_modulo(
   constraint fk_mod_perfmod  foreign key(n_id_modulo) references seg_modulo(n_id_modulo),
   constraint fk_perf_perfmod  foreign key(n_id_perfil) references seg_perfil(n_id_perfil)
 );
-create table mae_parametros_sistema(
+create table parametros_sistema(
   v_parametro varchar(45) not null primary key,
   v_descripcion varchar(100) ,
   v_tipo_dato varchar(30) ,
@@ -73,3 +73,4 @@ insert into seg_perfil_modulo(n_id_perfil,n_id_modulo) values(2,3);
 insert into mae_parametros_sistema(v_parametro,v_descripcion,v_tipo_dato,v_valor) values("Máximo Indicadores","Cantidad de indicadores máxima que puede tener una campaña.","Entero","5");
 insert into mae_parametros_sistema(v_parametro,v_descripcion,v_tipo_dato,v_valor) values("Fecha Inicio de Simulación","Fecha de la transaccion inicial a partir de la cual se considera al realizar simulaciones.","Fecha","01-01-18 00:00");
 insert into mae_parametros_sistema(v_parametro,v_descripcion,v_tipo_dato,v_valor) values("Máximo Etapas","Cantidad de etapas máxima que puede tener una campaña.","Entero","3");
+delete from seg_usuario where v_usuario!='ADMIN';

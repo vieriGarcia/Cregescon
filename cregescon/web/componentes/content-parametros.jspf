@@ -1,34 +1,19 @@
-<%-- 
-    Document   : parametros
-    Created on : 25-jun-2019, 17:21:53
-    Author     : Darkness
---%>
-<%@page import="pe.edu.unmsm.sistemas.util.Conexion"%>
-<%@page import="pe.edu.unmsm.sistemas.util.ParametrosSistema"%>
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
 <%@page import="java.sql.ResultSet"%>
-<%
-    //Conexion con = Conexion.getConexion(ParametrosSistema.DRIVER, ParametrosSistema.URL, ParametrosSistema.CONECTION_USER, ParametrosSistema.CONECTION_PASS);
-    System.out.println(con);
-//Consulta para obtener los productos
-    /*String */sql = "SELECT * FROM mae_parametros_sistema";
-    /*ResultSet */res = con.ejecutarQuery(sql);
-    HttpSession s = request.getSession(false);
-    //Usuario usuario =(Usuario)s.getAttribute("usuario");
-    //System.out.println("usuario:"+usuario);
+<% sql = "SELECT * FROM mae_parametros_sistema";
+   res = con.ejecutarQuery(sql);
 %>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Pagina Parametros</title>
-    </head>
-    <body>
+<!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Parametros</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Parametro</a>
+                    </div>
         <div class="col-xl-12 col-lg-7">
             <div class="card shadow mb-10">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-9">
-                    <center><h6 class="m-0 font-weight-bold text-primary">          Parametros del Sistema</h6></center>
+                    <center><h6 class="m-0 font-weight-bold text-primary">Parametros del Sistema</h6></center>
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
@@ -86,5 +71,3 @@
                 </div>
             </div>
         </div>
-    </body>
-</html>

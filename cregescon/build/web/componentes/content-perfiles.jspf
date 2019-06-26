@@ -1,5 +1,12 @@
 <%-- any content can be specified here e.g.: --%>
+<% sql="SELECT * FROM seg_perfil";
+   res= con.ejecutarQuery(sql);%>
 <%@ page pageEncoding="UTF-8" %>
+<!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Perfiles</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Perfil</a>
+                    </div>
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
@@ -12,6 +19,7 @@
                     <tr>
                       <th>Perfil</th>
                       <th>Descripcion</th>
+                      <th>Acciones</th>
                     </tr>
                   </thead>
                   <tfoot>
@@ -25,6 +33,14 @@
                     <tr>
                       <td><%=res.getString("v_desc_corta")%></td>
                       <td><%=res.getString("v_descripcion")%></td>
+                      <td>
+                  
+                          <center><div>
+                          <button id="edit" onclick='' class="btn btn-light a-btn-slide-text" data-toggle="modal" data-target="#miModal"><img src="resources/img/edit.png"></button>
+                          <button id="delete" onclick='' class="btn btn-light a-btn-slide-text" data-toggle="modal" data-target="#miModal"><img src="resources/img/delete.png"></button>
+                          </div></center>
+                          
+                      </td>
                     </tr> 
                     <% } %>
                   </tbody>

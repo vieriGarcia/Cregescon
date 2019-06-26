@@ -9,4 +9,12 @@
             30
         </session-timeout>
     </session-config>
+    <servlet>
+        <servlet-name>cambiarContenido</servlet-name>
+        <servlet-class>pe.edu.unmsm.sistemas.servlets.cambiarContenido</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cambiarContenido</servlet-name>
+        <url-pattern>/cambiarContenido.do</url-pattern>
+    </servlet-mapping>
 </web-app>

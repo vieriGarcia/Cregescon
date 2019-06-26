@@ -14,6 +14,13 @@
     Conexion con= Conexion.getConexion(ParametrosSistema.DRIVER, ParametrosSistema.URL,ParametrosSistema.CONECTION_USER,ParametrosSistema.CONECTION_PASS);
     //Consulta para obtener los productos
     String sql="";
+    HttpSession s = request.getSession(false);
+    Integer accion=(Integer)s.getAttribute("accion");
+    if(accion==null){
+         accion=ParametrosSistema.PARAMETROS_SISTEMA;
+         s.setAttribute("accion", accion);
+    }
+    
     ResultSet res= null;
 %>
 <!DOCTYPE html>
@@ -46,12 +53,18 @@
                         <h1 class="h3 mb-0 text-gray-800">Perfiles</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Perfil</a>
                     </div>
-                    <!-- Contenido para mantener perfiles -->
+                    <!-- Contenido  -->
+                    
                     <% 
-                        sql="SELECT * FROM seg_perfil";
-                        res= con.ejecutarQuery(sql);
-                    %>
-                    <%@include file ="componentes/content-perfiles.jspf"%>
+                        switch(accion){
+                            case ParametrosSistema.SEGURIDAD_PERFILES:%>
+                            <%@include file ="componentes/content-perfiles.jspf"%>
+                    <%      break;
+                           case ParametrosSistema.PARAMETROS_SISTEMA:%>
+                            <%@include file ="componentes/content-parametros.jspf"%>
+                    <%      break;
+                           
+                        };%>
                 </div>
             </div>
             <!-- End of Main Content -->

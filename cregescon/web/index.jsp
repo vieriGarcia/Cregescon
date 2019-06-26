@@ -5,6 +5,17 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="pe.edu.unmsm.sistemas.util.Conexion"%>
+<%@page import="java.text.DecimalFormat"%>
+<%@page import="pe.edu.unmsm.sistemas.util.ParametrosSistema"%>
+<%@page import="java.sql.ResultSet"%>
+<!-- Custom styles for this page -->
+  <% 
+    Conexion con= Conexion.getConexion(ParametrosSistema.DRIVER, ParametrosSistema.URL,ParametrosSistema.CONECTION_USER,ParametrosSistema.CONECTION_PASS);
+    //Consulta para obtener los productos
+    String sql="";
+    ResultSet res= null;
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,6 +30,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
         <!-- Custom styles for this template-->
         <link href="resources/css/sb-admin-2.min.css" rel="stylesheet">
+        <link href="resources/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     </head>
     <body id="page-top">
         <div id="wrapper">
@@ -31,9 +43,15 @@
                 <div class="container-fluid">
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                        <h1 class="h3 mb-0 text-gray-800">Perfiles</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Perfil</a>
                     </div>
+                    <!-- Contenido para mantener perfiles -->
+                    <% 
+                        sql="SELECT * FROM seg_perfil";
+                        res= con.ejecutarQuery(sql);
+                    %>
+                    <%@include file ="componentes/content-perfiles.jspf"%>
                 </div>
             </div>
             <!-- End of Main Content -->
@@ -61,10 +79,13 @@
 
         <!-- Page level plugins -->
         <script src="resources/vendor/chart.js/Chart.min.js"></script>
+        <script src="resources/vendor/datatables/jquery.dataTables.min.js"></script>
+        <script src="resources/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
         <!-- Page level custom scripts -->
         <script src="resources/js/demo/chart-area-demo.js"></script>
         <script src="resources/js/demo/chart-pie-demo.js"></script>
+        <script src="resources/js/demo/datatables-demo.js"></script>
     </body>
 </html>
 

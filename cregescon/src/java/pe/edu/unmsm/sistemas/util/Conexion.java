@@ -39,8 +39,7 @@ public class Conexion {
     public static Conexion getConexion(String driver,String url,String user,String password){
         if(conn==null) {
             try {
-                Class.forName(driver);
-                
+                Class.forName(driver);               
                 con=DriverManager.getConnection(url,user,password);
                 stm=con.createStatement();
                 conn = new Conexion(driver,url,user,password);
